@@ -13,7 +13,7 @@
         <nav class=" text-capitalize">
             <!--============== the first navbar ====== -->
             <div class="d-flex justify-content-between align-content-center px-15">
-                <div class="d-flex align-items-center gap-5 mt-5 text-white">
+                <div class="d-flex align-items-center gap-5 mt-5 text-white top-nav">
                     <div class="d-flex gap-2">
                         <i class="bi bi-phone text-color-accent"></i>
                         <span>+1 5589 55488 55</span>
@@ -33,44 +33,55 @@
                 <h1>
                     Delicious
                 </h1>
-                <ul class="d-flex mb-0 gap-8 list-unstyled align-items-center">
-                    <li>
-                        <a href="#">home</a>
-                    </li>
-                    <li>
-                        <a href="#">about</a>
-                    </li>
-                    <li>
-                        <a href="#">menu</a>
-                    </li>
-                    <li>
-                        <a href="#">specials</a>
-                    </li>
-                    <li>
-                        <a href="#">events</a>
-                    </li>
-                    <li>
-                        <a href="#">chefs</a>
-                    </li>
-                    <li>
-                        <a href="#">gallery</a>
-                    </li>
-                    <li class="nav-item dropdown ">
-                        <p class="mb-0" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                            <i class="bi bi-chevron-down "></i>
+                <input id="check" type="checkbox">
+                <label for="check">
+                    <ul class="d-flex mb-0 gap-8 list-unstyled align-items-center ">
+                        <li class="close">
+                            <label for="check">
+                                <i class="bi bi-x"></i>
 
-                        </p>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">contact</a>
-                    </li>
-                </ul>
+                            </label>
+                        </li>
+                        <li>
+                            <a href="#">home</a>
+                        </li>
+                        <li>
+                            <a href="#">about</a>
+                        </li>
+                        <li>
+                            <a href="#">menu</a>
+                        </li>
+                        <li>
+                            <a href="#">specials</a>
+                        </li>
+                        <li>
+                            <a href="#">events</a>
+                        </li>
+                        <li>
+                            <a href="#">chefs</a>
+                        </li>
+                        <li>
+                            <a href="#">gallery</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <p class="mb-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                                <i class="bi bi-chevron-down "></i>
+
+                            </p>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">contact</a>
+                        </li>
+                    </ul>
+                </label>
+
+                <i class="bi bi-list fs-2 d-lg-none"></i>
 
             </section>
 
@@ -92,7 +103,7 @@
                 <div class="carousel-inner ">
                     <div class="carousel-item active ">
                         <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/hero-carousel/hero-carousel-1.jpg"
-                            class="d-block w-100" alt="...">
+                            class=" w-100" alt="...">
                         <div class="carousel-caption  d-flex flex-column gap-6 align-items-center">
                             <h5 class="fs-1"><span class="text-color-accent">Delicious</span> Restaurant</h5>
                             <p class="w-75">Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
@@ -109,7 +120,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/hero-carousel/hero-carousel-2.jpg"
-                            class="d-block w-100" alt="...">
+                            class=" w-100" alt="...">
                         <div class="carousel-caption d-flex flex-column gap-6 align-items-center">
                             <h5 class="fs-1">At vero eos et accusamus</h5>
                             <p class="w-75">Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
@@ -126,7 +137,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/hero-carousel/hero-carousel-3.jpg"
-                            class="d-block w-100" alt="...">
+                            class=" w-100" alt="...">
                         <div class="carousel-caption d-flex flex-column gap-6 align-items-center">
                             <h5 class="fs-1">At vero eos et accusamus</h5>
                             <p class="w-75">Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
