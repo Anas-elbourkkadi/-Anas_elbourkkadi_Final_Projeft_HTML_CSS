@@ -1,5 +1,21 @@
+a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-accent;
+    }
+}
+
+h1,
+h5 {
+    font-family: $my-font;
+}
+
+
+
 .carousel-inner img {
-    height: 100VH;
+    height: 100vh;
     position: relative;
 
 
@@ -20,16 +36,26 @@
     opacity: 0.5;
 }
 
-.carousel-control-prev-icon{
-     filter: brightness(0) invert(1);
-     font-size: 200px;
-     color: white;
+.carousel-control-prev-icon {
+    filter: brightness(0) invert(1);
+    font-size: 200px;
+    color: white;
+}
+
+h5 {
+    font-family: $my-font;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+    font-size: 50px;
+
 }
 .carousel-caption {
     color: $color-text-light;
     position: absolute;
-    bottom: 200px;
-    z-index: 3;
+    bottom: 150px;
+    z-index: 1;
 
     p {
         text-align: justify;
@@ -37,10 +63,11 @@
 
 }
 
-h5{
-    font-family: $my-font;
-}
-.carousel-control-prev i,.carousel-control-next i{
-    font-size: 50px;
-    
+
+
+@media (max-width: 900px) {
+    .top-nav {
+        display: none;
+
+    }
 }

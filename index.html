@@ -12,76 +12,77 @@
     <header class="position-fixed z-3 w-100">
         <nav class=" text-capitalize">
             <!--============== the first navbar ====== -->
-            <div class="top-nav">
-                <div class="">
-                    <div class="">
-                        <i class="bi bi-phone"></i>
+            <div
+                class="d-flex justify-content-lg-between mt-lg-1 align-content-center px-15 justify-content-sm-end mt-sm-4">
+                <div class="d-lg-flex align-items-center gap-5 mt-5 text-white top-nav ">
+                    <div class="d-flex gap-2">
+                        <i class="bi bi-phone text-color-accent"></i>
                         <span>+1 5589 55488 55</span>
                     </div>
 
-                    <div class="">
-                        <i class="bi bi-clock"></i>
+                    <div class="d-flex gap-2">
+                        <i class="bi bi-clock text-color-accent"></i>
                         <span>Mon-Sat: 11:00 AM - 23:00 PM</span>
                     </div>
                 </div>
-                <button class="">booka a
+                <button class="btn btn-color-accent text-color-text-light align-self-end px-7 rounded-5 ">booka a
                     table</button>
             </div>
             <!--============== the sconde navbar ====== -->
 
-            <section class="d-flex align-items-center justify-content-between px-15 text-white py-5">
+            <section class="the_sconde_nav">
                 <h1>
                     Delicious
                 </h1>
                 <input id="check" type="checkbox">
+                <ul class="list">
+                    <li>
+                        <label for="check">
+                            <i class="bi bi-x"></i>
+                        </label>
+                    </li>
+                    <li>
+                        <a href="#">home</a>
+                    </li>
+                    <li>
+                        <a href="#">about</a>
+                    </li>
+                    <li>
+                        <a href="#">menu</a>
+                    </li>
+                    <li>
+                        <a href="#">specials</a>
+                    </li>
+                    <li>
+                        <a href="#">events</a>
+                    </li>
+                    <li>
+                        <a href="#">chefs</a>
+                    </li>
+                    <li>
+                        <a href="#">gallery</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <p class="mb-0 drop" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                            <i class="bi bi-chevron-down "></i>
+
+                        </p>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                </ul>
                 <label for="check">
-                    <ul class="d-flex mb-0 gap-8 list-unstyled align-items-center ">
-                        <li class="close">
-                            <label for="check">
-                                <i class="bi bi-x"></i>
-
-                            </label>
-                        </li>
-                        <li>
-                            <a href="#">home</a>
-                        </li>
-                        <li>
-                            <a href="#">about</a>
-                        </li>
-                        <li>
-                            <a href="#">menu</a>
-                        </li>
-                        <li>
-                            <a href="#">specials</a>
-                        </li>
-                        <li>
-                            <a href="#">events</a>
-                        </li>
-                        <li>
-                            <a href="#">chefs</a>
-                        </li>
-                        <li>
-                            <a href="#">gallery</a>
-                        </li>
-                        <li class="nav-item dropdown ">
-                            <p class="mb-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                                <i class="bi bi-chevron-down "></i>
-
-                            </p>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">contact</a>
-                        </li>
-                    </ul>
+                    <i class="bi bi-list"></i>
                 </label>
 
-                <i class="bi bi-list fs-2 d-lg-none"></i>
+
 
             </section>
 
@@ -167,6 +168,43 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+        </section>
+        <input id="check" type="checkbox">
+        <section class="d-flex gap-10 container page-about">
+            <img class="w-100" src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/about.jpg" alt="">
+            <section class="aboute">
+                <div>
+                    <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. </p>
+
+                </div>
+
+                <div>
+                    <p>
+                        <i class="bi bi-check2-all"></i>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                    <p>
+                        <i class="bi bi-check2-all"></i>
+                        Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </p>
+
+                    <p>
+                        <i class="bi bi-check2-all"></i>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur
+                    </p>
+                </div>
+                <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident
+                </p>
+            </section>
+
         </section>
     </main>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
