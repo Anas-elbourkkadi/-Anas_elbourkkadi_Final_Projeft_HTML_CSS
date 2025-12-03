@@ -51,6 +51,7 @@ h5 {
     font-size: 50px;
 
 }
+
 .carousel-caption {
     color: $color-text-light;
     position: absolute;
@@ -66,8 +67,10 @@ h5 {
 
 
 @media (max-width: 900px) {
-    .top-nav {
-        display: none;
-
+    .carousel-inner img {
+        height: 60vh;
+    }
+    .carousel-caption{
+        bottom: 90px;
     }
 }
