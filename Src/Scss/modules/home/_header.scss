@@ -1,0 +1,13 @@
+
+
+a{
+    color: white;
+    text-decoration: none;
+    &:hover{
+        color: $color-accent;
+    }
+}
+
+h1{
+    font-family: $my-font;
+}
