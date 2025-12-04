@@ -30575,4 +30575,16 @@ h5, .h5 {
   font-family: "Satisfy";
 }
 
+@media (max-width: 900px) {
+  .aboute {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    padding-inline-start: 8vw;
+  }
+  .aboute video {
+    width: 680px;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */

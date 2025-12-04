@@ -12,6 +12,7 @@
         align-self: flex-start;
         height: 400px;
     }
+
     .aboute_text i {
         color: $color-accent;
         font-size: 25px;
@@ -23,5 +24,21 @@
             font-family: $my-font;
         }
     }
-    
+
+}
+
+@media (max-width:900px) {
+    .aboute {
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        padding-inline-start: 8vw;
+
+        video {
+            width: 680px;
+        }
+
+
+    }
+
 }
