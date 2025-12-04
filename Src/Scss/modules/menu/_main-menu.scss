@@ -1,0 +1,9 @@
+.articels-menu{
+    .nav-menu{
+        display: flex;
+        justify-content: center;
+        gap: 3vw;
+        font-family: $my-font;
+        color: $color-text-body;
+    }
+}

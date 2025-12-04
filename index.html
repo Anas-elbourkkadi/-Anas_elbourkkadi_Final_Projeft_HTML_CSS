@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="position-fixed z-3 w-100">
+    <header class="navbar-nav-scroll position-fixed z-3 w-100">
         <nav class=" text-capitalize">
             <!--============== the first navbar ====== -->
             <div
@@ -221,7 +221,7 @@
             <section class="section-title" data-aos="fade-up" data-aos-delay="100">
                 <p class="text-uppercase text-color-accent">why us</p>
                 <h2 class="title">Why choose <span class="text-color-accent">Our Restaurant</span></h2>
-            </section >
+            </section>
             <div class="parent" data-aos="fade-up" data-aos-delay="100">
                 <div class="cards">
 
@@ -257,12 +257,40 @@
                 <p class="text-color-accent word1 text-uppercase">menu</p>
                 <h2>Check Our Tasty <span class="text-color-accent">Menu</span></h2>
             </section>
+            <section class="articels-menu">
+                <input id="all" type="checkbox">
+                <input id="startes" type="checkbox">
+                <input id="salads" type="checkbox">
+                <input id="specials" type="checkbox">
+                <div class="nav-menu">
+                    <label for="all">
+                        <p>all</p>
+                    </label>
+                    <label for="startes">
+                        <p>startes</p>
+                    </label>
+                    <label for="salads">
+
+                        <p>salads</p>
+                    </label>
+                    <label for="specials">
+
+                        <p>specials</p>
+                    </label>
+                </div>
+                <ul>
+
+                </ul>
+
+            </section>
         </div>
     </main>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+
+      
     </script>
 </body>
 

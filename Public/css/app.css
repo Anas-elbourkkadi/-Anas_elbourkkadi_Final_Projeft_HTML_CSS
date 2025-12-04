@@ -30533,6 +30533,16 @@ textarea.form-control-lg {
   z-index: 9997;
 }
 
+.navbar-nav-scroll {
+  animation: scroll-convert-color;
+  animation-timeline: scroll(y);
+}
+
+@keyframes scroll-convert-color {
+  to {
+    background-color: black;
+  }
+}
 @media (max-width: 900px) {
   .top-nav {
     display: none;
@@ -30781,6 +30791,14 @@ h5, .h5 {
 }
 .title-menu h2, .title-menu .h2 {
   font-family: "Satisfy";
+}
+
+.articels-menu .nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  font-family: "Satisfy";
+  color: #444444;
 }
 
 /*# sourceMappingURL=app.css.map */

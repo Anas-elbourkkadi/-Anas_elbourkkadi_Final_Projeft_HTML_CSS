@@ -61,6 +61,17 @@
 
 }
 
+.navbar-nav-scroll{
+    // background-color: rgba(0, 0, 0, 0.548);
+    animation: scroll-convert-color;
+    animation-timeline: scroll(y);
+}
+@keyframes scroll-convert-color{
+    to{
+        background-color: black;
+    }
+}
+
 @media (max-width: 900px) {
     .top-nav {
         display: none;
