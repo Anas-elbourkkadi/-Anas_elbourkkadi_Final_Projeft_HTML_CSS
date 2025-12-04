@@ -30759,6 +30759,14 @@ h5, .h5 {
   .aboute video {
     width: 450px;
   }
+  .presnt .parent {
+    padding-block: 4vh;
+  }
+  .presnt .parent .cards {
+    width: 75%;
+    padding-inline-start: 8vw;
+    margin-inline-start: 4vw;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -137,4 +137,14 @@
             width: 450px;
         }
     }
+    .presnt{
+        .parent{
+            padding-block: 4vh;
+            .cards{
+                width: 75%;
+                padding-inline-start: 8vw;
+                margin-inline-start: 4vw;
+            }
+        }
+    }
 }
