@@ -30719,6 +30719,12 @@ h5, .h5 {
   transform: translateY(-10px);
 }
 
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (max-width: 900px) {
   .aboute {
     display: flex;
@@ -30728,6 +30734,22 @@ h5, .h5 {
   }
   .aboute video {
     width: 680px;
+  }
+  .presnt {
+    align-items: start;
+    padding-block: 1vh;
+  }
+  .presnt .section-title {
+    width: 100%;
+  }
+  .presnt .parent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .presnt .parent .cards {
+    width: 90%;
+    margin-inline-start: 8vw;
+    padding-block: 2vh;
   }
 }
 @media (max-width: 480px) {
