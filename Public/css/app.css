@@ -30882,5 +30882,15 @@ input[type=checkbox] {
     width: 98%;
   }
 }
+.fade {
+  display: flex !important;
+  align-items: center;
+}
+.fade .text-Specials {
+  width: 50%;
+}
+.fade img {
+  width: 30%;
+}
 
 /*# sourceMappingURL=app.css.map */
