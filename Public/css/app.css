@@ -30586,5 +30586,13 @@ h5, .h5 {
     width: 680px;
   }
 }
+@media (max-width: 480px) {
+  .aboute {
+    padding-inline: 4vw;
+  }
+  .aboute video {
+    width: 450px;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
