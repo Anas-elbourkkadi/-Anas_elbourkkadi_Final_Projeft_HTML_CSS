@@ -17,6 +17,7 @@ $color-text-body: #444444;
 $bk-secondery: #42301c;
 $bk-black: black;
 $bk-transparent:rgba(0, 0, 0, 0.356);
+$bk-cards:#f4f1ff;
 
 $custom-colors: (
     'color-accent':$color-accent,
@@ -26,6 +27,7 @@ $custom-colors: (
     'bk-secondery': $bk-secondery,
     'bk-black': $bk-black,
     'bk-transparent': $bk-transparent,
+    'bk-cards': $bk-cards,
 
     );
 $theme-colors: map-merge($map1: $custom-colors, $map2:$theme-colors );
