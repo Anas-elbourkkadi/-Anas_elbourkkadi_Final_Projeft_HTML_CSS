@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./Public/css/app.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -42,25 +44,25 @@
                         </label>
                     </li>
                     <li>
-                        <a href="#">home</a>
+                        <a href="#home">home</a>
                     </li>
                     <li>
-                        <a href="#">about</a>
+                        <a href="#about">about</a>
                     </li>
                     <li>
-                        <a href="#">menu</a>
+                        <a href="#menu">menu</a>
                     </li>
                     <li>
-                        <a href="#">specials</a>
+                        <a href="#specials">specials</a>
                     </li>
                     <li>
-                        <a href="#">events</a>
+                        <a href="#events">events</a>
                     </li>
                     <li>
-                        <a href="#">chefs</a>
+                        <a href="#chefs">chefs</a>
                     </li>
                     <li>
-                        <a href="#">gallery</a>
+                        <a href="#gallery">gallery</a>
                     </li>
                     <li class="nav-item dropdown ">
                         <p class="mb-0 drop" data-bs-toggle="dropdown" aria-expanded="false">
@@ -91,7 +93,7 @@
     </header>
 
     <main>
-        <section class="hero-section">
+        <section class="hero-section" id="home">
             <div id="carouselExampleDark" class="carousel carousel-white slide" data-bs-ride="carousel"
                 data-bs-interval="1800">
                 <div class="carousel-indicators">
@@ -107,12 +109,15 @@
                         <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/hero-carousel/hero-carousel-1.jpg"
                             class=" w-100" alt="...">
                         <div class="carousel-caption  d-flex flex-column gap-6 align-items-center">
-                            <h5 class="fs-1"><span class="text-color-accent">Delicious</span> Restaurant</h5>
-                            <p class="w-75">Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                            <h5 class="fs-1" data-aos="fade-down" data-aos-delay="300"><span
+                                    class="text-color-accent">Delicious</span> Restaurant</h5>
+                            <p class="w-75" data-aos="fade-down" data-aos-delay="300">Beatae vitae dicta sunt explicabo.
+                                Nemo enim ipsam voluptatem quia voluptas
                                 sit
                                 aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
                                 voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-                            <div class="btn-slide d-flex gap-5 justify-content-center">
+                            <div class="btn-slide d-flex gap-5 justify-content-center" data-aos="fade-up"
+                                data-aos-delay="300">
                                 <button class="btn btn-outline-color-accent text-white px-6 rounded-5 fs-6">our
                                     menu</button>
                                 <button class="btn btn-outline-color-accent text-white px-6 rounded-5 fs-6">book
@@ -124,12 +129,14 @@
                         <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/hero-carousel/hero-carousel-2.jpg"
                             class=" w-100" alt="...">
                         <div class="carousel-caption d-flex flex-column gap-6 align-items-center">
-                            <h5 class="fs-1">At vero eos et accusamus</h5>
-                            <p class="w-75">Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                            <h5 class="fs-1" data-aos="fade-down" data-aos-delay="300">At vero eos et accusamus</h5>
+                            <p class="w-75" data-aos="fade-down" data-aos-delay="300">Beatae vitae dicta sunt explicabo.
+                                Nemo enim ipsam voluptatem quia voluptas
                                 sit
                                 aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
                                 voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-                            <div class="btn-slide d-flex gap-5 justify-content-center">
+                            <div class="btn-slide d-flex gap-5 justify-content-center" data-aos="fade-up"
+                                data-aos-delay="300">
                                 <button class="btn btn-outline-color-accent text-white px-6 rounded-5 fs-6">our
                                     menu</button>
                                 <button class="btn btn-outline-color-accent text-white px-6 rounded-5 fs-6">book
@@ -141,12 +148,14 @@
                         <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/hero-carousel/hero-carousel-3.jpg"
                             class=" w-100" alt="...">
                         <div class="carousel-caption d-flex flex-column gap-6 align-items-center">
-                            <h5 class="fs-1">At vero eos et accusamus</h5>
-                            <p class="w-75">Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                            <h5 class="fs-1" data-aos="fade-down" data-aos-delay="300">At vero eos et accusamus</h5>
+                            <p class="w-75" data-aos="fade-down" data-aos-delay="300">Beatae vitae dicta sunt explicabo.
+                                Nemo enim ipsam voluptatem quia voluptas
                                 sit
                                 aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
                                 voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-                            <div class="btn-slide d-flex gap-5 justify-content-center">
+                            <div class="btn-slide d-flex gap-5 justify-content-center" data-aos="fade-up"
+                                data-aos-delay="300">
                                 <button class="btn btn-outline-color-accent text-white px-6 rounded-5 fs-6">our
                                     menu</button>
                                 <button class="btn btn-outline-color-accent text-white px-6 rounded-5 fs-6">book
@@ -171,9 +180,9 @@
             </div>
         </section>
         <!-- <input id="check" type="checkbox"> -->
-        <section class="d-flex gap-10 container page-about">
-            <img class="w-100" src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/about.jpg" alt="">
-            <section class="aboute">
+        <section class="aboute" data-aos="fade-up" data-aos-delay="100" id="about">
+           <video src="./Public/videos/Vidoes" poster="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/about.jpg" controls></video> 
+            <section class="aboute_text">
                 <div>
                     <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -209,6 +218,10 @@
         </section>
     </main>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

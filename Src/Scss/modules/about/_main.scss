@@ -1,9 +1,27 @@
-
 .aboute {
-    i{
+    display: flex;
+    justify-content: center;
+    padding-inline: 5vw;
+    gap: 2vw;
+    padding-block: 8vh;
+    align-items: center;
 
-        color: red;
-        
+    video {
+        width: 550px;
+        object-fit: cover;
+        align-self: flex-start;
+        height: 400px;
     }
-}
+    .aboute_text i {
+        color: $color-accent;
+        font-size: 25px;
 
+    }
+
+    .aboute_text {
+        h2 {
+            font-family: $my-font;
+        }
+    }
+    
+}

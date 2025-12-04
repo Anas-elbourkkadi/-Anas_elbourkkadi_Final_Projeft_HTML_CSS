@@ -30553,8 +30553,26 @@ h5, .h5 {
     bottom: 90px;
   }
 }
-.aboute i {
-  color: red;
+.aboute {
+  display: flex;
+  justify-content: center;
+  padding-inline: 5vw;
+  gap: 2vw;
+  padding-block: 8vh;
+  align-items: center;
+}
+.aboute video {
+  width: 550px;
+  object-fit: cover;
+  align-self: flex-start;
+  height: 400px;
+}
+.aboute .aboute_text i {
+  color: #ffb03b;
+  font-size: 25px;
+}
+.aboute .aboute_text h2, .aboute .aboute_text .h2 {
+  font-family: "Satisfy";
 }
 
 /*# sourceMappingURL=app.css.map */
