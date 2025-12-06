@@ -55,19 +55,20 @@
         width: 100%;
         height: 100%;
         background-color: gray;
-        opacity: 0.5; 
+        opacity: 0.5;
         z-index: 9997;
     }
 
 }
 
-.navbar-nav-scroll{
+.navbar-nav-scroll {
     // background-color: rgba(0, 0, 0, 0.548);
     animation: scroll-convert-color;
     animation-timeline: scroll(y);
 }
-@keyframes scroll-convert-color{
-    to{
+
+@keyframes scroll-convert-color {
+    to {
         background-color: black;
     }
 }
@@ -128,11 +129,12 @@
 
 }
 
-@media (max-width:480px){
+@media (max-width:480px) {
     .the_sconde_nav {
         padding-inline: 30px;
     }
-    .nav-top{
+
+    .nav-top {
         justify-content: flex-end;
         margin-top: 1vh;
         padding-inline-end: 5vw;
