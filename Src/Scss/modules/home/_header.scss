@@ -35,3 +35,21 @@ h1 {
         right: 10px;
     }
 }
+
+.top-nav,.sconde-nav{
+    background-color: transparent;
+    animation: scroll-convert-color;
+    animation-timeline: scroll(y);
+
+
+}
+// .navbar-nav-scroll {
+//     animation: scroll-convert-color;
+//     animation-timeline: scroll(y);
+// }
+
+@keyframes scroll-convert-color {
+    to {
+        background-color: $bk-black;
+    }
+}
