@@ -11,89 +11,83 @@
 </head>
 
 <body>
-    <header class="navbar-nav-scroll position-fixed z-3 w-100">
-        <nav class=" text-capitalize">
-            <!--============== the first navbar ====== -->
+    <header class="position-fixed top-0 z-2 w-100">
+        <nav>
             <div
-                class="d-flex justify-content-lg-between mt-lg-1 align-content-center px-lg-15 justify-content-sm-end mt-sm-4 nav-top">
-                <div class="d-lg-flex align-items-center gap-5 mt-5 text-white top-nav ">
-                    <div class="d-flex gap-2">
-                        <i class="bi bi-phone text-color-accent"></i>
-                        <span>+1 5589 55488 55</span>
-                    </div>
-
-                    <div class="d-flex gap-2">
-                        <i class="bi bi-clock text-color-accent"></i>
-                        <span>Mon-Sat: 11:00 AM - 23:00 PM</span>
-                    </div>
+                class=" container d-flex justify-content-lg-between justify-content-end align-items-center pt-1 top-nav">
+                <div class="d-lg-flex gap-5 text-color-text-light d-none">
+                    <p class="m-0"><i class="bi bi-phone text-color-accent me-1"></i>+1 5589 55488 55</p>
+                    <p class="m-0"><i class="bi bi-clock text-color-accent me-1"></i>Mon-Sat: 11:00 AM - 23:00 PM</p>
                 </div>
-                <button class="btn btn-color-accent text-color-text-light align-self-end px-7 me-lg-0  rounded-5 me-sm-15 ">booka a
-                    table</button>
+                <button class="bg-color-accent px-8 border border-0 py-1 rounded-pill text-color-text-light  mb-1">book
+                    a table</button>
             </div>
-            <!--============== the sconde navbar ====== -->
-
-            <section class="the_sconde_nav">
-                <h1>
-                    Delicious
-                </h1>
-                <input id="check" type="checkbox">
-                <ul class="list">
-                    <li>
-                        <label for="check">
-                            <i class="bi bi-x"></i>
-                        </label>
-                    </li>
-                    <li>
-                        <a href="#home">home</a>
-                    </li>
-                    <li>
-                        <a href="#about">about</a>
-                    </li>
-                    <li>
-                        <a href="#menu">menu</a>
-                    </li>
-                    <li>
-                        <a href="#specials">specials</a>
-                    </li>
-                    <li>
-                        <a href="#events">events</a>
-                    </li>
-                    <li>
-                        <a href="#chefs">chefs</a>
-                    </li>
-                    <li>
-                        <a href="#gallery">gallery</a>
-                    </li>
-                    <li class="nav-item dropdown ">
-                        <p class="mb-0 drop" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                            <i class="bi bi-chevron-down "></i>
-
-                        </p>
+            <section
+                class="d-flex justify-content-between container align-items-center text-color-text-light py-2 position-relative sconde-nav">
+                <h1>Delicious</h1>
+                <ul class="d-lg-flex d-none align-items-center my-0 gap-5 list-unstyled">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#menu">menu</a></li>
+                    <li><a href="#specials">specials</a></li>
+                    <li><a href="#events">events</a></li>
+                    <li><a href="#chefs">chefs</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown <i class="bi bi-chevron-down"></i>
+                        </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">contact</a>
-                    </li>
+                    <li><a href="#contact">contact</a></li>
+
                 </ul>
-                <label for="check">
-                    <i class="bi bi-list"></i>
-                </label>
-                <div class="overlay"></div>
+                <a class="d-xl-none" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    href="#collapseExample" aria-controls="collapseExample"><i class="bi bi-list "></i></a>
+                <div class="d-xl-none collapse position-absolute top-50 start-0 w-100 z-3 nav-menu "
+                    id="collapseExample">
+                    <div class="card card-body">
+                        <ul class=" d-flex flex-column  my-0 gap-5 list-unstyled ">
+                            <a data-bs-toggle="collapse" role="button" href="#collapseExample"
+                                aria-controls="collapseExample" class="close-tage"><i
+                                    class="bi bi-x text-color-text-light"></i></a>
+                            <li><a href="#home">home</a></li>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#menu">menu</a></li>
+                            <li><a href="#specials">specials</a></li>
+                            <li><a href="#events">events</a></li>
+                            <li><a href="#chefs">chefs</a></li>
+                            <li><a href="#gallery">gallery</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown <i class="bi bi-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#contact">contact</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
 
 
 
             </section>
-
         </nav>
     </header>
 
     <main>
-        <section class="hero-section" id="home">
+        <section id="home">
+
             <div id="carouselExampleDark" class="carousel carousel-white slide" data-bs-ride="carousel"
                 data-bs-interval="1800">
                 <div class="carousel-indicators">
@@ -105,393 +99,172 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner ">
-                    <div class="carousel-item active ">
-                        <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/hero-carousel/hero-carousel-1.jpg"
-                            class=" w-100" alt="...">
-                        <div class="carousel-caption  d-flex flex-column gap-6 align-items-center">
-                            <h5 class="fs-1" data-aos="fade-down" data-aos-delay="300"><span
-                                    class="text-color-accent">Delicious</span> Restaurant</h5>
-                            <p class="w-75" data-aos="fade-down" data-aos-delay="300">Beatae vitae dicta sunt explicabo.
-                                Nemo enim ipsam voluptatem quia voluptas
-                                sit
-                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                                voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-                            <div class="btn-slide d-flex gap-5 justify-content-center" data-aos="fade-up"
-                                data-aos-delay="300">
-                                <button class="btn btn-outline-color-accent text-white px-6 rounded-5 fs-6">our
+                    <div class="carousel-item active">
+                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/hero-carousel/hero-carousel-1.jpg"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption  text-white ">
+                            <h5 class="fs-1"><span class="text-color-accent">Delicious</span> Restaurant</h5>
+                            <p class="sentnce-carousle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="d-flex justify-content-center gap-5 carousle--btn">
+                                <button
+                                    class="btn btn-outline-color-accent px-5 rounded-pill py-1 text-color-text-light">our
                                     menu</button>
-                                <button class="btn btn-outline-color-accent text-white px-6 rounded-5 fs-6">book
-                                    table</button>
+                                <button
+                                    class="btn btn-outline-color-accent px-5 rounded-pill py-1 text-color-text-light">book
+                                    a table</button>
+
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/hero-carousel/hero-carousel-2.jpg"
-                            class=" w-100" alt="...">
-                        <div class="carousel-caption d-flex flex-column gap-6 align-items-center">
-                            <h5 class="fs-1" data-aos="fade-down" data-aos-delay="300">At vero eos et accusamus</h5>
-                            <p class="w-75" data-aos="fade-down" data-aos-delay="300">Beatae vitae dicta sunt explicabo.
-                                Nemo enim ipsam voluptatem quia voluptas
-                                sit
+                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/hero-carousel/hero-carousel-2.jpg"
+                            class="d-block w-100 " alt="...">
+                        <div class="carousel-caption ">
+                            <h5 class="fs-1">Temporibus autem quibusdam</h5>
+                            <p class="sentnce-carousle">Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                                quia voluptas sit
                                 aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
                                 voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-                            <div class="btn-slide d-flex gap-5 justify-content-center" data-aos="fade-up"
-                                data-aos-delay="300">
-                                <button class="btn btn-outline-color-accent text-white px-6 rounded-5 fs-6">our
+                            <div class="d-flex justify-content-center gap-5 carousle--btn">
+                                <button
+                                    class="btn btn-outline-color-accent px-5 rounded-pill py-1 text-color-text-light">our
                                     menu</button>
-                                <button class="btn btn-outline-color-accent text-white px-6 rounded-5 fs-6">book
-                                    table</button>
+                                <button
+                                    class="btn btn-outline-color-accent px-5 rounded-pill py-1 text-color-text-light">book
+                                    a table</button>
+
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/hero-carousel/hero-carousel-3.jpg"
-                            class=" w-100" alt="...">
-                        <div class="carousel-caption d-flex flex-column gap-6 align-items-center">
-                            <h5 class="fs-1" data-aos="fade-down" data-aos-delay="300">At vero eos et accusamus</h5>
-                            <p class="w-75" data-aos="fade-down" data-aos-delay="300">Beatae vitae dicta sunt explicabo.
-                                Nemo enim ipsam voluptatem quia voluptas
-                                sit
-                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                                voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-                            <div class="btn-slide d-flex gap-5 justify-content-center" data-aos="fade-up"
-                                data-aos-delay="300">
-                                <button class="btn btn-outline-color-accent text-white px-6 rounded-5 fs-6">our
+                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/hero-carousel/hero-carousel-3.jpg"
+                            class="d-block  w-100" alt="...">
+                        <div class="carousel-caption  ">
+                            <h5 class="fs-1">At vero eos et accusamus</h5>
+                            <p class="sentnce-carousle">Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                nihil impedit quo minus id
+                                quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+                                repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+                            <div class="d-flex justify-content-center gap-5 carousle--btn">
+                                <button
+                                    class="btn btn-outline-color-accent px-5 rounded-pill py-1 text-color-text-light">our
                                     menu</button>
-                                <button class="btn btn-outline-color-accent text-white px-6 rounded-5 fs-6">book
-                                    table</button>
+                                <button
+                                    class="btn btn-outline-color-accent px-5 rounded-pill py-1 text-color-text-light">book
+                                    a table</button>
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev  " type="button" data-bs-target="#carouselExampleDark"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
                     data-bs-slide="prev">
-                    <!-- <span class="carousel-control-prev-icon text-white bi bi-chevron-left" aria-hidden="true"></span> -->
-                    <i class="bi bi-chevron-left "></i>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
                     data-bs-slide="next">
-                    <!-- <span class="carousel-control-next-icon " aria-hidden="true"></span> -->
-                    <i class="bi bi-chevron-right "></i>
-
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </section>
-        <!-- <input id="check" type="checkbox"> -->
-        <section class="aboute" data-aos="fade-up" data-aos-delay="100" id="about">
-            <video src="./Public/videos/Vidoes"
-                poster="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/about.jpg" controls></video>
-            <section class="aboute_text ">
-                <div>
-                    <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. </p>
+        <div id="about" class="container ">
+            <div class="row gy-4 py-15 lh-base">
+                <div class="col-lg-6 col-sm-12  position-relative">
+                    <img class="w-100  "
+                        src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/about.jpg"
+                        alt="imge-about">
+                    <a data-bs-toggle="collapse" href="#collapseVdieo" role="button"
+                        class="btn-play btn bg-color-accent px-4 py-1  rounded-circle position-absolute  ">
+                        <i class="bi bi-play-fill text-white text-center "></i>
+                    </a>
+                    <div class="collapse  collapse--container" id="collapseVdieo">
+                        <div id="carouselVdieo" class="carousel slide carousel---slide ">
+                            <div class="carousel-inner ">
+                                <div class="carousel-item item-img active">
+                                    <video src="./Public/videos/Vidoes" class="w-100"></video>
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-1.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-2.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-3.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-4.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-5.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-6.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-7.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-8.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
 
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVdieo"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselVdieo"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-
-                <div>
+                <div class="col-lg-6 col-sm-12">
+                    <section class="text-about">
+                        <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua.</p>
+                    </section>
+                    <div>
+                        <p><i class="bi bi-check2-all fs-5 text-color-accent"></i>Ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.</p>
+                        <p><i class="bi bi-check2-all fs-5 text-color-accent"></i>Duis aute irure dolor in reprehenderit
+                            in voluptate velit.</p>
+                        <p><i class="bi bi-check2-all fs-5 text-color-accent"></i>Ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in
+                            reprehenderit
+                            in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
+                    </div>
                     <p>
-                        <i class="bi bi-check2-all"></i>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-
-                    <p>
-                        <i class="bi bi-check2-all"></i>
-                        Duis aute irure dolor in reprehenderit in voluptate velit.
-                    </p>
-
-                    <p>
-                        <i class="bi bi-check2-all"></i>
                         Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur
+                        in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non
+                        proident
                     </p>
-                </div>
-                <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident
-                </p>
-            </section>
-
-        </section>
-        <section class="presnt">
-            <section class="section-title" data-aos="fade-up" data-aos-delay="100">
-                <p class="text-uppercase text-color-accent">why us</p>
-                <h2 class="title">Why choose <span class="text-color-accent">Our Restaurant</span></h2>
-            </section>
-            <div class="parent" data-aos="fade-up" data-aos-delay="100">
-                <div class="cards">
-
-                    <p class="number">01</p>
-                    <h2>Lorem, ipsum.</h2>
-                    <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat
-                    </p>
-
-                </div>
-
-                <div class="cards">
-
-                    <p class=" number">02</p>
-                    <h2>Lorem, ipsum.</h2>
-                    <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat
-                    </p>
-
-                </div>
-
-                <div class="cards">
-
-                    <p class="number">03</p>
-                    <h2>Lorem, ipsum.</h2>
-                    <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat
-                    </p>
-
                 </div>
             </div>
-        </section>
-
-        <div class="menu" id="menu">
-            <section class="title-menu" data-aos="fade-up" data-aos-delay="100">
-                <p class="text-color-accent word1 text-uppercase">menu</p>
-                <h2>Check Our Tasty <span class="text-color-accent">Menu</span></h2>
-            </section>
-            <section class="articels-menu" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="nav-menu">
-                    <label for="all">
-                        <p>all</p>
-                    </label>
-                    <label for="startes">
-                        <p>startes</p>
-                    </label>
-                    <label for="salads">
-
-                        <p>salads</p>
-                    </label>
-                    <label for="specials">
-
-                        <p>specials</p>
-                    </label>
-                </div>
-                <ul class="list-menu" data-aos="fade-up" data-aos-delay="100">
-
-                    <input id="all" type="checkbox">
-                    <input id="startes" type="checkbox">
-                    <input id="salads" type="checkbox">
-                    <input id="specials" type="checkbox">
-
-                    <li class="line line1">
-                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/menu/lobster-bisque.jpg"
-                            alt="">
-                        <div class="sentnce2">
-                            <a id="home" href="#">Lobster
-                                Bise............................................................................. <span
-                                    class="text-color-accent">$5.95</span>
-                            </a>
-                            <p class="text-color-text-body">Lorem, deren, trataro, filede, nerada </p>
-                        </div>
-                    </li>
-
-                    <li class="line line2">
-                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/menu/lobster-bisque.jpg"
-                            alt="">
-                        <div class="sentnce2">
-                            <a id="home" href="#">Lobster
-                                Bise.............................................................................. <span
-                                    class="text-color-accent">$5.95</span>
-                            </a>
-                            <p class="text-color-text-body">Lorem, deren, trataro, filede, nerada </p>
-                        </div>
-                    </li>
-
-                    <li class="line line3">
-                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/menu/lobster-bisque.jpg"
-                            alt="">
-                        <div class="sentnce2">
-                            <a id="home" href="#">Lobster
-                                Bise............................................................................. <span
-                                    class="text-color-accent">$5.95</span>
-                            </a>
-                            <p class="text-color-text-body">Lorem, deren, trataro, filede, nerada </p>
-                        </div>
-                    </li>
-
-                    <li class="line line4">
-                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/menu/bread-barrel.jpg"
-                            alt="">
-                        <div class="sentnce2">
-                            <a id="home" href="#">Lobster
-                                Bise...............................................................................
-                                <span class="text-color-accent">$5.95</span>
-                            </a>
-                            <p class="text-color-text-body">Lorem, deren, trataro, filede, nerada </p>
-                        </div>
-                    </li>
-
-                    <li class="line line5">
-                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/menu/caesar.jpg"
-                            alt="">
-                        <div class="sentnce2">
-                            <a id="home" href="#">Lobster
-                                Bise.............................................................................. <span
-                                    class="text-color-accent">$5.95</span>
-                            </a>
-                            <p class="text-color-text-body">Lorem, deren, trataro, filede, nerada </p>
-                        </div>
-                    </li>
-
-                    <li class="line line6">
-                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/menu/greek-salad.jpg"
-                            alt="">
-                        <div class="sentnce2">
-                            <a id="home" href="#">Lobster
-                                Bise.............................................................................. <span
-                                    class="text-color-accent">$5.95</span>
-                            </a>
-                            <p class="text-color-text-body">Lorem, deren, trataro, filede, nerada </p>
-                        </div>
-                    </li>
-
-                    <li class="line line7">
-                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/menu/lobster-roll.jpg"
-                            alt="">
-                        <div class="sentnce2">
-                            <a id="home" href="#">Lobster
-                                Bise...............................................................................
-                                <span class="text-color-accent">$5.95</span>
-                            </a>
-                            <p class="text-color-text-body">Lorem, deren, trataro, filede, nerada </p>
-                        </div>
-                    </li>
-
-                    <li class="line line8">
-                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/menu/mozzarella.jpg"
-                            alt="">
-                        <div class="sentnce2">
-                            <a id="home" href="#">Lobster
-                                Bise.............................................................................. <span
-                                    class="text-color-accent">$5.95</span>
-                            </a>
-                            <p class="text-color-text-body">Lorem, deren, trataro, filede, nerada </p>
-                        </div>
-                    </li>
-
-                    <li class="line line9">
-                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/menu//tuscan-grilled.jpg"
-                            alt="">
-                        <div class="sentnce2">
-                            <a id="home" href="#">Lobster
-                                Bise.............................................................................. <span
-                                    class="text-color-accent">$5.95</span>
-                            </a>
-                            <p class="text-color-text-body">Lorem, deren, trataro, filede, nerada </p>
-                        </div>
-                    </li>
-
-                </ul>
-
-            </section>
         </div>
-
-        <section id="specials">
-            <section class="title-menu mt-25" data-aos="fade-up" data-aos-delay="100">
-                <p class="text-color-accent word1 text-uppercase">Specials</p>
-                <h2>Check Our <span class="text-color-accent">Specials</span></h2>
-            </section>
-
-            <div class="d-flex align-items-start">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                        aria-selected="true">Modi sit est</button>
-                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
-                        aria-selected="false">Unde praesentium sed</button>
-                    <button class="nav-link " id="v-pills-disabled-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled"
-                        aria-selected="false">Pariatur explicabo vel</button>
-                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">Nostrum qui quasi</button>
-                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
-                        aria-selected="false">Iusto ut expedita aut</button>
-                </div>
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                        aria-labelledby="v-pills-home-tab" tabindex="0">
-                        <div class="text-Specials">
-                            <h2>Architecto ut aperiam autem id1</h2>
-                            <p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
-                                mareta paulona marka
-
-                                Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos
-                                ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet
-                                eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus
-                                nostrum rem vero</p>
-                        </div>
-                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/specials-1.jpg" alt="">
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                        aria-labelledby="v-pills-profile-tab" tabindex="0">
-                        <div class="text-Specials">
-                            <h2>Et blanditiis nemo veritatis excepturi2</h2>
-                            <p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
-                                mareta paulona marka
-
-                                Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis
-                                sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates.
-                                Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal
-                            </p>
-                        </div>
-                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/specials-2.jpg" alt="">
-                    </div>
-                    <div class="tab-pane fade d-flex justify-content-center" id="v-pills-disabled" role="tabpanel"
-                        aria-labelledby="v-pills-disabled-tab" tabindex="0">
-                        <div class="text-Specials">
-                            <h2>Architecto ut aperiam autem id3</h2>
-                            <p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
-                                mareta paulona marka
-
-                                Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos
-                                ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet
-                                eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus
-                                nostrum rem vero</p>
-                        </div>
-                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/specials-3.jpg" alt="">
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                        aria-labelledby="v-pills-messages-tab" tabindex="0">
-                        <div class="text-Specials">
-                            <h2>Impedit facilis occaecati odio neque aperiam sit4</h2>
-                            <p>Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt
-                                dicta dolor et. In asperiores velit quaerat perferendis aut
-
-                                Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque
-                                necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste
-                                odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
-                        </div>
-                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/specials-4.jpg" alt="">
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                        aria-labelledby="v-pills-settings-tab" tabindex="0">
-                        <div class="text-Specials">
-                            <h2>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore5</h2>
-                            <p>Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus
-
-                                Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
-                                necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur
-                                corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore
-                            </p>
-                        </div>
-                        <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/specials-5.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
+
+
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
