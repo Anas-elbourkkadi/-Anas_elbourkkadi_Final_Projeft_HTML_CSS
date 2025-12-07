@@ -84,9 +84,10 @@
     </header>
 
     <main>
-        <section class="hero-section ">
+        <section id="home">
 
-            <div id="carouselExampleDark" class="carousel carousel-white slide">
+            <div id="carouselExampleDark" class="carousel carousel-white slide" data-bs-ride="carousel"
+                data-bs-interval="1800">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -96,15 +97,16 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner ">
-                    <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="carousel-item active">
                         <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/hero-carousel/hero-carousel-1.jpg"
                             class="d-block w-100" alt="...">
                         <div class="carousel-caption  text-white ">
                             <h5 class="fs-1"><span class="text-color-accent">Delicious</span> Restaurant</h5>
-                            <p class="sentnce-carousle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            <p class="sentnce-carousle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <div class="d-flex justify-content-center gap-5">
+                            <div class="d-flex justify-content-center gap-5 carousle--btn">
                                 <button
                                     class="btn btn-outline-color-accent px-5 rounded-pill py-1 text-color-text-light">our
                                     menu</button>
@@ -115,15 +117,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
+                    <div class="carousel-item">
                         <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/hero-carousel/hero-carousel-2.jpg"
                             class="d-block w-100 " alt="...">
                         <div class="carousel-caption ">
                             <h5 class="fs-1">Temporibus autem quibusdam</h5>
-                            <p class="sentnce-carousle">Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                            <p class="sentnce-carousle">Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                                quia voluptas sit
                                 aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
                                 voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-                            <div class="d-flex justify-content-center gap-5">
+                            <div class="d-flex justify-content-center gap-5 carousle--btn">
                                 <button
                                     class="btn btn-outline-color-accent px-5 rounded-pill py-1 text-color-text-light">our
                                     menu</button>
@@ -139,10 +142,11 @@
                             class="d-block  w-100" alt="...">
                         <div class="carousel-caption  ">
                             <h5 class="fs-1">At vero eos et accusamus</h5>
-                            <p class="sentnce-carousle">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                            <p class="sentnce-carousle">Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                nihil impedit quo minus id
                                 quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
                                 repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
-                            <div class="d-flex justify-content-center gap-5">
+                            <div class="d-flex justify-content-center gap-5 carousle--btn">
                                 <button
                                     class="btn btn-outline-color-accent px-5 rounded-pill py-1 text-color-text-light">our
                                     menu</button>
@@ -166,6 +170,96 @@
                 </button>
             </div>
         </section>
+        <div id="about" class="container ">
+            <div class="row gy-4 py-15 lh-base">
+                <div class="col-lg-6 col-sm-12  position-relative">
+                    <img class="w-100  "
+                        src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/about.jpg"
+                        alt="imge-about">
+                    <a data-bs-toggle="collapse" href="#collapseVdieo" role="button"
+                        class="btn-play btn bg-color-accent px-4 py-1  rounded-circle position-absolute  ">
+                        <i class="bi bi-play-fill text-white text-center "></i>
+                    </a>
+                    <div class="collapse  collapse--container" id="collapseVdieo">
+                        <div id="carouselVdieo" class="carousel slide carousel---slide ">
+                            <div class="carousel-inner ">
+                                <div class="carousel-item item-img active">
+                                    <video src="./Public/"></video>
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-1.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-2.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-3.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-4.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-5.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-6.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-7.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-8.jpg"
+                                        class="d-block w-50 " alt="...">
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVdieo"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselVdieo"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <section class="text-about">
+                        <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua.</p>
+                    </section>
+                    <div>
+                        <p><i class="bi bi-check2-all fs-5 text-color-accent"></i>Ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.</p>
+                        <p><i class="bi bi-check2-all fs-5 text-color-accent"></i>Duis aute irure dolor in reprehenderit
+                            in voluptate velit.</p>
+                        <p><i class="bi bi-check2-all fs-5 text-color-accent"></i>Ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in
+                            reprehenderit
+                            in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                    <p>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non
+                        proident
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 
 
