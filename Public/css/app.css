@@ -30524,6 +30524,10 @@ header {
   animation-timeline: scroll(y);
 }
 
+.parent {
+  line-height: 14vh;
+}
+
 @keyframes scroll-convert-color {
   to {
     background-color: black;
@@ -30589,7 +30593,8 @@ header {
   transition: 0.5s;
 }
 
-.btn-play::after, .btn-play::before {
+.btn-play::after,
+.btn-play::before {
   content: "";
   height: 100%;
   width: 100%;
@@ -30638,18 +30643,74 @@ header {
 .item-img img {
   position: relative;
   left: 25%;
-  height: 80%;
+  width: 50%;
   z-index: 6;
+  height: 25%;
 }
 
 .item-img video {
   position: relative;
-  left: 25%;
-  height: 80%;
+  left: 18%;
   z-index: 6;
-  width: 100%;
+  width: 65% !important;
 }
 
+.close-vdieo {
+  z-index: 6;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.word-title {
+  font-size: 14px;
+}
+
+.title,
+h2,
+.h2 {
+  font-family: "Satisfy";
+}
+
+section {
+  transition: 0.5s;
+}
+
+.card-item:hover {
+  background-color: #ffb03b !important;
+  color: white;
+}
+.card-item:hover .num {
+  color: white !important;
+}
+
+section:hover {
+  transform: translateY(-20px);
+}
+
+@media (max-width: 480px) {
+  .collapse--container {
+    left: 10px;
+    width: 95vw;
+  }
+  .item-img img {
+    height: 36vh;
+  }
+  .item-img video {
+    height: 35vh;
+  }
+}
+@media (max-width: 900px) {
+  .collapse--container {
+    left: 10px;
+    width: 85vw;
+  }
+  .item-img img,
+  .item-img video {
+    height: 39vh;
+  }
+}
 .title-menu {
   display: flex;
   flex-direction: column;

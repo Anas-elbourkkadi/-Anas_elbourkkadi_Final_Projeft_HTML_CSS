@@ -173,67 +173,78 @@
             </div>
         </section>
         <div id="about" class="container ">
-            <div class="row gy-4 py-15 lh-base">
+            <div class="row gy-4 py-15 lh-base" data-aos="fade-up" data-aos-delay="300">
                 <div class="col-lg-6 col-sm-12  position-relative">
                     <img class="w-100  "
                         src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/about.jpg"
                         alt="imge-about">
                     <a data-bs-toggle="collapse" href="#collapseVdieo" role="button"
-                        class="btn-play btn bg-color-accent px-4 py-1  rounded-circle position-absolute  ">
-                        <i class="bi bi-play-fill text-white text-center "></i>
+                        class="btn-play btn bg-color-accent px-4 py-1 rounded-circle position-absolute">
+                        <i class="bi bi-play-fill text-white text-center"></i>
                     </a>
-                    <div class="collapse  collapse--container" id="collapseVdieo">
-                        <div id="carouselVdieo" class="carousel slide carousel---slide ">
+
+                    <div class="collapse collapse--container" id="collapseVdieo">
+
+                        <div id="carouselVdieo" class="carousel slide  carousel---slide ">
                             <div class="carousel-inner ">
                                 <div class="carousel-item item-img active">
-                                    <video src="./Public/videos/Vidoes" class="w-100"></video>
+                                    <video src="./Public/videos/Vidoes" autoplay muted controls></video>
                                 </div>
                                 <div class="carousel-item item-img">
-                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-1.jpg"
-                                        class="d-block w-50 " alt="...">
-                                </div>
-                                <div class="carousel-item item-img">
-                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-2.jpg"
-                                        class="d-block w-50 " alt="...">
-                                </div>
-                                <div class="carousel-item item-img">
-                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-3.jpg"
-                                        class="d-block w-50 " alt="...">
-                                </div>
-                                <div class="carousel-item item-img">
-                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-4.jpg"
-                                        class="d-block w-50 " alt="...">
-                                </div>
-                                <div class="carousel-item item-img">
-                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-5.jpg"
-                                        class="d-block w-50 " alt="...">
-                                </div>
-                                <div class="carousel-item item-img">
-                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-6.jpg"
-                                        class="d-block w-50 " alt="...">
-                                </div>
-                                <div class="carousel-item item-img">
-                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-7.jpg"
-                                        class="d-block w-50 " alt="...">
-                                </div>
-                                <div class="carousel-item item-img">
-                                    <img src="Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-8.jpg"
-                                        class="d-block w-50 " alt="...">
+                                    <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-1.jpg"
+                                        alt="">
                                 </div>
 
+                                <div class="carousel-item item-img">
+                                    <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-2.jpg"
+                                        alt="">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-3.jpg"
+                                        alt="">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-4.jpg"
+                                        alt="">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-5.jpg"
+                                        alt="">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-6.jpg"
+                                        alt="">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-7.jpg"
+                                        alt="">
+                                </div>
+                                <div class="carousel-item item-img">
+                                    <img src="./Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/gallery/gallery-8.jpg"
+                                        alt="">
+                                </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVdieo"
+
+                            <button class="carousel-control-prev " type="button" data-bs-target="#carouselVdieo"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
+                                <span class="visually-hidden ">Previous</span>
                             </button>
+
                             <button class="carousel-control-next" type="button" data-bs-target="#carouselVdieo"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
+
+
+                        <a class="close-video-btn" data-bs-toggle="collapse" href="#collapseVdieo">
+                            <i class="bi bi-x text-white close-vdieo" role="button"></i>
+                        </a>
+
                     </div>
+
                 </div>
                 <div class="col-lg-6 col-sm-12">
                     <section class="text-about">
@@ -262,6 +273,55 @@
                 </div>
             </div>
         </div>
+
+        <div class="py-8">
+            <section class="text-center parent" data-aos="fade-up" data-aos-delay="200">
+                <p class="text-uppercase text-color-accent bg-bk-cards  d-inline   px-4 py-1 rounded-pill word-title">
+                    why us</p>
+                <h2 class="title">Why choose <span class="text-color-accent">Our Restaurant</span></h2>
+            </section>
+            <div class="container" data-aos="fade-up" data-aos-delay="200">
+                <div class="row g-4 my-10">
+                    
+                    <div class="col-lg-4 col-sm-12 mb-3">
+                        <div class=" card-item bg-bk-cards ">
+                            <section class="px-4 py-4 lh-lg ">
+                                <p class="text-color-accent fs-2 num">01</p>
+                                <h2>Lorem Ipsum</h2>
+                                <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero
+                                    placeat</p>
+                            </section>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-lg-4 mb-3">
+                        <div class="card-item bg-bk-cards ">
+                            <section class="px-4 py-4 lh-lg">
+                                <p class="text-color-accent fs-2 num">02</p>
+                                <h2>Repellat Nihil</h2>
+                                <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel
+                                    dire leno para dest</p>
+                            </section>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-lg-4 mb-3">
+                        <div class="card-item bg-bk-cards ">
+                            <section class="px-4 py-4 lh-lg">
+                                <p class="text-color-accent fs-2 num">03</p>
+                                <h2>Ad ad velit qui</h2>
+                                <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel
+                                    nam quis</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </main>
 
 
