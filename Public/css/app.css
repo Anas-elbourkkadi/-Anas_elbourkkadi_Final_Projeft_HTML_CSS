@@ -30669,7 +30669,7 @@ header {
 
 .title,
 h2,
-.h2 {
+.h2, .link-card {
   font-family: "Satisfy";
 }
 
@@ -30684,8 +30684,11 @@ section {
 .card-item:hover .num {
   color: white !important;
 }
+.card-item:hover .link-card {
+  color: white !important;
+}
 
-section:hover {
+.content__card:hover {
   transform: translateY(-20px);
 }
 
@@ -30726,95 +30729,39 @@ section:hover {
   font-family: "Satisfy";
 }
 
-.articels-menu .nav-menu {
-  display: flex;
-  justify-content: center;
-  gap: 3vw;
-  font-family: "Satisfy";
-  color: #444444;
-  margin-top: 10vh;
-}
-
-.list-menu {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  justify-content: center;
-  column-gap: 5vw;
-}
-.list-menu .line {
-  display: flex;
-  align-items: center;
-  gap: 1vw;
-}
-.list-menu .line .sentnce2 {
-  line-height: 0.5rem;
-  align-self: center;
-  margin-top: 3vh;
-  color: black;
-  line-height: 1.5rem;
-}
-.list-menu .line .sentnce2 a {
-  color: black;
-}
-.list-menu .line .sentnce2 a:hover {
-  color: #ffb03b;
-}
-.list-menu .line img {
-  width: 50px;
-  border-radius: 50%;
+.imge-tab {
+  width: 60px !important;
+  height: 60px !important;
   box-sizing: border-box;
 }
 
-.list-menu #startes:checked ~ .line3,
-.list-menu #startes:checked ~ .line4,
-.list-menu #startes:checked ~ .line5,
-.list-menu #startes:checked ~ .line7,
-.list-menu #startes:checked ~ .line8,
-.list-menu #startes:checked ~ .line2 {
-  display: none;
-}
-.list-menu #salads:checked ~ .line1,
-.list-menu #salads:checked ~ .line2,
-.list-menu #salads:checked ~ .line6,
-.list-menu #salads:checked ~ .line9,
-.list-menu #salads:checked ~ .line8,
-.list-menu #salads:checked ~ .line5 {
-  display: none;
-}
-.list-menu #specials:checked ~ .line1,
-.list-menu #specials:checked ~ .line2,
-.list-menu #specials:checked ~ .line6,
-.list-menu #specials:checked ~ .line9,
-.list-menu #specials:checked ~ .line8,
-.list-menu #specials:checked ~ .line5 {
-  display: none;
-}
-.list-menu #all:checked ~ .line1,
-.list-menu #all:checked ~ .line2,
-.list-menu #all:checked ~ .line6,
-.list-menu #all:checked ~ .line9,
-.list-menu #all:checked ~ .line8,
-.list-menu #all:checked ~ .line5 {
-  display: flex;
+.nav-tabs a {
+  color: rgba(0, 0, 0, 0.356);
+  font-family: "Satisfy";
 }
 
-input[type=checkbox] {
-  display: none;
+.tab-content {
+  position: relative;
 }
 
-@media (max-width: 900px) {
-  .list-menu {
-    grid-template-columns: repeat(1, auto);
-    justify-content: center;
-  }
+.tab-pane {
+  position: absolute;
+  left: 0;
+  top: 0px;
 }
-@media (max-width: 480px) {
-  .list-menu {
-    justify-content: start;
-    column-gap: 0;
-    width: 98%;
-  }
+
+.nav-link {
+  color: #444444 !important;
 }
+
+.nav-link.active {
+  color: #ffb03b !important;
+}
+
+.co a:hover {
+  color: #ffb03b !important;
+}
+
 .fade {
   display: flex !important;
   align-items: center;

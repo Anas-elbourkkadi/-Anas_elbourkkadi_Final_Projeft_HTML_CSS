@@ -1,111 +1,37 @@
-.articels-menu {
-    .nav-menu {
-        display: flex;
-        justify-content: center;
-        gap: 3vw;
+.imge-tab{
+    width: 60px !important;
+    height: 60px !important;
+    box-sizing: border-box;
+}
+
+.nav-tabs{
+    a{
+        color: $bk-transparent;
         font-family: $my-font;
-        color: $color-text-body;
-        margin-top: 10vh;
     }
 }
 
-.list-menu {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-content: center;
-    column-gap: 5vw;
 
-    .line {
-        display: flex;
-        align-items: center;
-        gap: 1vw;
-
-        .sentnce2 {
-            line-height: 0.5rem;
-            align-self: center;
-            margin-top: 3vh;
-            color: $bk-black;
-            line-height: 1.5rem;
-            a{
-                color: $bk-black;
-                &:hover{
-                    color: $color-accent;
-                }
-            }
-
-        }
-
-        img {
-            width: 50px;
-            border-radius: 50%;
-            box-sizing: border-box;
-        }
-
-    }
-
+.tab-content{
+    position: relative;
+}
+.tab-pane {
+    position: absolute;
+    left: 0;
+    top:0px
+    
 }
 
-
-
-.list-menu {
-    // #all:checked~.line {
-    //     display: flex;
-    // }
-
-    #startes:checked~.line3,
-    #startes:checked~.line4,
-    #startes:checked~.line5,
-    #startes:checked~.line7,
-    #startes:checked~.line8,
-    #startes:checked~.line2 {
-        display: none;
-    }
-
-    #salads:checked~.line1,
-    #salads:checked~.line2,
-    #salads:checked~.line6,
-    #salads:checked~.line9,
-    #salads:checked~.line8,
-    #salads:checked~.line5 {
-        display: none;
-    }
-
-    #specials:checked~.line1,
-    #specials:checked~.line2,
-    #specials:checked~.line6,
-    #specials:checked~.line9,
-    #specials:checked~.line8,
-    #specials:checked~.line5 {
-        display: none;
-    }
-
-    #all:checked~.line1,
-    #all:checked~.line2,
-    #all:checked~.line6,
-    #all:checked~.line9,
-    #all:checked~.line8,
-    #all:checked~.line5 {
-        display: flex;
-    }
+.nav-link {
+  color: $color-text-body !important; 
+ 
 }
 
-input[type="checkbox"] {
-    display: none;
+.nav-link.active {
+  color: $color-accent !important; 
 }
 
-@media (max-width:900px) {
-    .list-menu {
-        grid-template-columns: repeat(1, auto);
-        justify-content: center;
-    }
-}
+.co a:hover{
+    color: $color-accent !important;
 
-@media (max-width:480px) {
-    .list-menu{
-        // grid-template-columns: repeat(1, 1fr);
-        justify-content: start;
-        // padding-inline-start: 0px;
-        column-gap: 0;
-        width: 98%;
-    }
 }

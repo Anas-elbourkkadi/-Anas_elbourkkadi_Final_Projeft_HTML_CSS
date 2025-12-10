@@ -101,7 +101,7 @@
 }
 
 .title,
-h2 {
+h2, .link-card {
     font-family: $my-font;
 }
 
@@ -112,15 +112,18 @@ section {
 .card-item:hover {
 
     background-color: $color-accent !important;
-    color: white;
+    color: white ;
 
     .num {
+        color: white !important;
+    }
+    .link-card{
         color: white !important;
     }
 
 }
 
-section:hover {
+.content__card:hover {
     transform: translateY(-20px);
 
 }
