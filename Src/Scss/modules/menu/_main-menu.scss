@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-.nav-tabs{
-    a{
-        color: $bk-transparent;
-        font-family: $my-font;
-    }
-}
+// .nav-tabs{
+//     a{
+//         color: $bk-transparent;
+//         font-family: $my-font;
+//     }
+// }
 
 
 .tab-content{
@@ -21,6 +21,9 @@
     top:0px
     
 }
+#menu{
+    height: 100vh;
+}
 
 .nav-link {
   color: $color-text-body !important; 
@@ -31,7 +34,44 @@
   color: $color-accent !important; 
 }
 
-.co a:hover{
+.nav-tabs .nav-link{
+  border: none !important;
+  border-radius: 0;
+  &:hover{
     color: $color-accent !important;
-
+  }
+  
+  
 }
+
+.nav-tabs .nav-link.active{
+  border-right: 2px solid $color-accent  !important;
+}
+
+.fade img{
+  animation: spin 10s linear infinite ;  
+  border-radius: 50% !important;
+}
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg) ;
+  }
+  to{
+    transform: rotate(360deg) ;
+  }
+}
+
+@media screen {
+  .nav-link.active {
+    background-color:$color-accent !important;
+  }
+  .nav-tabs .nav-link.active,.nav-item{
+    border-right:none !important;
+  }
+  
+  
+  
+}
+
+
