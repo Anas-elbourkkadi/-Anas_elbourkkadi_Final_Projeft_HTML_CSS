@@ -48,26 +48,17 @@
   border-right: 2px solid $color-accent  !important;
 }
 
-.fade img{
-  animation: spin 10s linear infinite ;  
-  border-radius: 50% !important;
-}
 
-@keyframes spin {
-  from{
-    transform: rotate(0deg) ;
-  }
-  to{
-    transform: rotate(360deg) ;
-  }
-}
 
-@media screen {
-  .nav-link.active {
+@media ( max-width:900px ) {
+  .link-a.active {
     background-color:$color-accent !important;
   }
   .nav-tabs .nav-link.active,.nav-item{
     border-right:none !important;
+  }
+  #menu {
+    height: 120vh ;
   }
   
   

@@ -30769,25 +30769,15 @@ section {
   border-right: 2px solid #ffb03b !important;
 }
 
-.fade img {
-  animation: spin 10s linear infinite;
-  border-radius: 50% !important;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@media screen {
-  .nav-link.active {
+@media (max-width: 900px) {
+  .link-a.active {
     background-color: #ffb03b !important;
   }
   .nav-tabs .nav-link.active, .nav-item {
     border-right: none !important;
+  }
+  #menu {
+    height: 120vh;
   }
 }
 .fade {
@@ -30799,6 +30789,55 @@ section {
 }
 .fade img {
   width: 30%;
+}
+
+#events {
+  background-image: url("../../../../Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/events-bg.jpg");
+  position: relative;
+}
+
+#events::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.side-img, .side-text {
+  z-index: 999;
+  background: none !important;
+}
+
+.event-img {
+  height: 100%;
+}
+
+.side-text i {
+  margin-right: 0.5rem;
+  font-size: 20px;
+}
+
+.carousel-indicators [data-bs-target="#carouselExampleSlidesOnly"] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #f4f1ff;
+}
+
+.carousel-indicators [data-bs-target="#carouselExampleSlidesOnly"].active {
+  background-color: #ffb03b;
+}
+
+@media (max-width: 950px) {
+  #events {
+    margin-top: 70vh;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

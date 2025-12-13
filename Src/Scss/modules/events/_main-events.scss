@@ -1,0 +1,55 @@
+#events{
+    background-image: url('../../../../Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/events-bg.jpg');
+    position: relative;
+}
+
+#events::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    
+}
+
+
+
+.side-img,.side-text{
+    z-index: 999;
+    background: none !important;
+}
+
+.event-img {
+    height: 100%;
+    
+}
+.side-text i{
+    margin-right: 0.5rem;
+    font-size: 20px;
+    
+}
+
+.carousel-indicators [data-bs-target="#carouselExampleSlidesOnly"] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $bk-cards;   
+}
+
+.carousel-indicators [data-bs-target="#carouselExampleSlidesOnly"].active {
+    background-color:$color-accent; 
+}
+
+@media (max-width:950px){
+    #events{
+        margin-top: 70vh;
+    }
+   
+    
+}
+
