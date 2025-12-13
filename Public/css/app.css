@@ -30834,6 +30834,23 @@ section {
   background-color: #ffb03b;
 }
 
+.form-control:focus {
+  border-color: #ffb03b;
+  box-shadow: none;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+.ImgeForm {
+  background-image: url("../../../../Public/images/Final_Project_HTML_SASS_BOOTSTRAP/Delicious/images/reservation.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
 @media (max-width: 950px) {
   #events {
     margin-top: 70vh;
