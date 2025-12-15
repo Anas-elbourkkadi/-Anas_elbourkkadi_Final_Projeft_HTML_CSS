@@ -1,0 +1,21 @@
+.IconItem {
+    font-size: 24px !important;
+}
+
+.ContainerMap {
+    height: 70vh;
+}
+.list-group-item h5, .card-title{
+    font-family: $my-font;
+}
+.list-group-item p,.card-text{
+    font-size: 14px;
+}
+
+.InputMessage{
+    height: 250px;
+}
+
+.card{
+    box-shadow: 0 2px 15px rgba(128, 128, 128, 0.473);
+}
