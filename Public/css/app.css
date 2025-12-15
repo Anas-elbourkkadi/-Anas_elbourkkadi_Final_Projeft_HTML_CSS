@@ -31000,4 +31000,21 @@ textarea {
   box-shadow: 0 2px 15px rgba(128, 128, 128, 0.473);
 }
 
+.MediaIcons i {
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.MediaIcons i:hover {
+  border-color: #ffb03b !important;
+  color: #ffb03b !important;
+}
+
+footer h5, footer .h5 {
+  font-family: "Satisfy";
+}
+
+footer p {
+  font-size: 14px;
+}
+
 /*# sourceMappingURL=app.css.map */
